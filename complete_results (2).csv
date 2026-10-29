@@ -1,0 +1,5 @@
+Algorithm,Best Makespan,Execution Time (Sec),Expanded Nodes (Iterations),Max Frontier Size (Memory),Total Random Restarts Performed
+Depth-First Search (DFS),11,0.0041,1266,10,0
+A* Search (H1 - Cheap),11,0.0029,101,172,0
+A* Search (H2 - More Informative),11,0.0011,60,112,0
+Multi-Start Hill-Climbing,11,60.0,6306482,N/A,111473
