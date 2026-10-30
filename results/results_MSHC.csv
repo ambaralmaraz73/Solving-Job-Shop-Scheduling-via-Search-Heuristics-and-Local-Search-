@@ -1,0 +1,15 @@
+=== SUMMARY METRICS ===
+Algorithm,Best Makespan,Execution Time (s),Time to Best (s),Success Rate (%),Expanded Nodes,Max Frontier Size (Restarts),Timed Out
+Multi-Start Hill-Climbing,12,60.0002,0.0006,100.0,6192874,140189,True
+
+=== DETAILED SCHEDULE ===
+Machine,Label,Initial time,Duration
+M1,J2 (Op 1),0,2
+M1,J1 (Op 1),2,3
+M2,J3 (Op 1),0,3
+M3,J2 (Op 2),2,3
+M2,J1 (Op 2),5,3
+M1,J3 (Op 2),5,2
+M3,J3 (Op 3),7,1
+M3,J1 (Op 3),8,3
+M2,J2 (Op 3),8,4
