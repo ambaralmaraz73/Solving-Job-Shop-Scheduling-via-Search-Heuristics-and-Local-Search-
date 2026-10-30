@@ -1,0 +1,10 @@
+=== SUMMARY METRICS ===
+Algorithm,Heuristic,Weight,Instance,Best Makespan,Execution Time (s),Time to Best (s),Success Rate (%),Expanded Nodes,Max Frontier Size,Timed Out
+A*,H1,1.0,Medium_3.txt,N/A,60.0001,N/A,0.0,284233,2558098,True
+Weighted A* (w=1.5),H1,1.5,Medium_3.txt,N/A,61.0698,N/A,0.0,305294,2747647,True
+Weighted A* (w=2.0),H1,2.0,Medium_3.txt,N/A,60.0001,N/A,0.0,301935,2717416,True
+A*,H2,1.0,Medium_3.txt,N/A,60.0001,N/A,0.0,140701,1266310,True
+Weighted A* (w=1.5),H2,1.5,Medium_3.txt,N/A,60.0001,N/A,0.0,139599,1256392,True
+Weighted A* (w=2.0),H2,2.0,Medium_3.txt,N/A,60.0001,N/A,0.0,138540,1246861,True
+
+=== DETAILED SCHEDULE ===
