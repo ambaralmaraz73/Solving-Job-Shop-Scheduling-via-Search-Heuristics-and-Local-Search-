@@ -1,0 +1,36 @@
+=== SUMMARY METRICS ===
+Algorithm,Heuristic,Weight,Instance,Best Makespan,Execution Time (s),Time to Best (s),Success Rate (%),Expanded Nodes,Max Frontier Size,Timed Out
+A*,H1,1.0,Easy_4.txt,N/A,60.0,N/A,0.0,817249,3268997,True
+Weighted A* (w=1.5),H1,1.5,Easy_4.txt,47,60.0,0.5118,100.0,4310639,1065143,True
+Weighted A* (w=2.0),H1,2.0,Easy_4.txt,47,60.0,0.979,100.0,6047952,164177,True
+A*,H2,1.0,Easy_4.txt,N/A,60.0001,N/A,0.0,535644,2142577,True
+Weighted A* (w=1.5),H2,1.5,Easy_4.txt,48,60.0001,58.285,100.0,655163,2301673,True
+Weighted A* (w=2.0),H2,2.0,Easy_4.txt,47,60.0001,0.0508,100.0,3675802,332752,True
+
+=== DETAILED SCHEDULE ===
+Machine,Label,Initial time,Duration
+M4,J4 (Op 1),0,2
+M1,J5 (Op 1),0,4
+M3,J3 (Op 1),0,5
+M2,J1 (Op 1),0,9
+M3,J2 (Op 1),5,9
+M5,J1 (Op 2),9,2
+M2,J3 (Op 2),9,4
+M5,J3 (Op 3),13,1
+M4,J1 (Op 3),11,5
+M1,J2 (Op 2),14,9
+M3,J5 (Op 2),14,9
+M2,J4 (Op 2),13,9
+M4,J2 (Op 3),23,1
+M3,J4 (Op 3),23,3
+M1,J3 (Op 4),23,4
+M4,J5 (Op 3),24,4
+M5,J4 (Op 4),26,3
+M3,J1 (Op 4),26,9
+M5,J2 (Op 4),29,10
+M2,J5 (Op 4),28,5
+M4,J3 (Op 5),28,10
+M1,J4 (Op 5),29,8
+M1,J1 (Op 5),37,10
+M5,J5 (Op 5),39,7
+M2,J2 (Op 5),39,6
