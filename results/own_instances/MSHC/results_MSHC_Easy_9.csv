@@ -1,0 +1,31 @@
+=== SUMMARY METRICS ===
+Algorithm,Instance,Best Makespan,Execution Time (s),Time to Best (s),Success Rate (%),Expanded Nodes,Max Frontier Size (Restarts),Timed Out
+Multi-Start Hill-Climbing,Easy_9.txt,37,60.0093,0.0254,100.0,2333509,2923,True
+
+=== DETAILED SCHEDULE ===
+Machine,Label,Initial time,Duration
+M1,J1 (Op 1),0,9
+M2,J4 (Op 1),0,4
+M1,J4 (Op 2),9,3
+M4,J2 (Op 1),0,6
+M4,J5 (Op 1),6,5
+M4,J3 (Op 1),11,1
+M3,J3 (Op 2),12,6
+M5,J2 (Op 2),6,10
+M3,J2 (Op 3),18,9
+M1,J5 (Op 2),12,3
+M5,J4 (Op 3),16,3
+M2,J2 (Op 4),27,3
+M4,J1 (Op 2),12,7
+M5,J3 (Op 3),19,4
+M1,J3 (Op 4),23,4
+M5,J5 (Op 3),23,2
+M2,J3 (Op 5),30,2
+M5,J1 (Op 3),25,9
+M1,J2 (Op 5),30,7
+M4,J4 (Op 4),19,7
+M2,J1 (Op 4),34,1
+M3,J4 (Op 5),27,1
+M3,J5 (Op 4),28,7
+M3,J1 (Op 5),35,2
+M2,J5 (Op 5),35,1
