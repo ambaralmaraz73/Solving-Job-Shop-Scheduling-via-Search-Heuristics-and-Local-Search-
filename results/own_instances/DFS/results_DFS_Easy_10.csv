@@ -1,0 +1,31 @@
+=== SUMMARY METRICS ===
+Algorithm,Instance,Best Makespan,Execution Time (s),Time to Best (s),Success Rate (%),Expanded Nodes,Max Frontier Size,Timed Out
+DFS,Easy_10.txt,78,60.0,58.5273,100.0,14363592,51,True
+
+=== DETAILED SCHEDULE ===
+Machine,Label,Initial time,Duration
+M3,J5 (Op 1),0,7
+M1,J5 (Op 2),7,1
+M4,J5 (Op 3),8,9
+M2,J5 (Op 4),17,9
+M5,J5 (Op 5),26,4
+M5,J4 (Op 1),30,7
+M3,J4 (Op 2),37,10
+M2,J3 (Op 1),26,5
+M2,J4 (Op 3),47,9
+M4,J3 (Op 2),31,3
+M4,J4 (Op 4),56,2
+M1,J3 (Op 3),34,10
+M1,J2 (Op 1),44,2
+M3,J2 (Op 2),47,5
+M5,J2 (Op 3),52,6
+M4,J2 (Op 4),58,9
+M3,J1 (Op 1),52,6
+M3,J3 (Op 4),58,5
+M5,J1 (Op 2),58,5
+M5,J3 (Op 5),63,1
+M1,J1 (Op 3),63,4
+M1,J4 (Op 5),67,7
+M2,J1 (Op 4),67,4
+M2,J2 (Op 5),71,7
+M4,J1 (Op 5),71,1
