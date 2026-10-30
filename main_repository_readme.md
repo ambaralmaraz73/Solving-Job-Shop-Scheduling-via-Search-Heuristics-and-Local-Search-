@@ -1,4 +1,4 @@
-# 🏭 Job-Shop Scheduling Problem (JSSP) Solvers Benchmark
+# Job-Shop Scheduling Problem (JSSP) Solvers Benchmark
 
 This repository contains the complete experimental evaluation, algorithmic implementations, and comparative benchmarks for the **Job-Shop Scheduling Problem (JSSP)**. We evaluate Uninformed Search (**DFS with Upper Bound Pruning**), Informed Search (**A* / Weighted A* with admissible heuristics), and Stochastic Local Search (**Multi-Start Hill-Climbing with VND**) under a strict **60.0-second execution time budget** per instance.
 
