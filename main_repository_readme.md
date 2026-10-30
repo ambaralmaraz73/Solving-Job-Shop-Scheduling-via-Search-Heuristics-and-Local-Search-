@@ -2,7 +2,7 @@
 
 This repository contains the complete experimental evaluation, algorithmic implementations, and comparative benchmarks for the **Job-Shop Scheduling Problem (JSSP)**. We evaluate Uninformed Search (**DFS with Upper Bound Pruning**), Informed Search (**A* / Weighted A* with admissible heuristics), and Stochastic Local Search (**Multi-Start Hill-Climbing with VND**) under a strict **60.0-second execution time budget** per instance.
 
-## Problem Overview
+## Problem Overview:
 
 The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization problem where a set of $n$ jobs must be processed across $m$ dedicated machines. Each job requires a fixed sequence of operations with specified processing durations. A feasible schedule must strictly satisfy:
 
@@ -14,7 +14,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 **Objective**: Minimize the global **makespan** ($C_{max}$), defined as the total completion time of all jobs.
 
-## 📁 Repository Structure
+## Repository Structure:
 
 ```
 ├── README.md                           # Main documentation & reproduction guide
