@@ -34,12 +34,14 @@ Follow this tutorial to execute any standard benchmark or custom instance (`.txt
 
 ```text
 data/
-├── README.md               # Dataset documentation & execution guide
-├── benchmarks/             # OR-Library standard benchmarks (ft06, ft10, ft20, la01 to la40)
+├── benchmarks/             # OR-Library standard benchmarks (ft10, la36)
+|       ├── ft10.txt
+|       ├── la36.txt
 └── own_instances/          # 20 custom seeded instances (random.seed(42))
-    ├── Easy_1.txt ... Easy_10.txt    # 10 Easy instances (3x3 to 5x5 grids)
-    ├── Medio_1.txt ... Medio_8.txt   # 8 Medium instances (6x6 to 8x8 grids)
-    └── Dificil_1.txt, Dificil_2.txt  # 2 Hard instances (10x10 grids)
+    ├── Easy_1.txt ... Easy_10.txt    # 10 Easy instances 
+    ├── Medio_1.txt ... Medio_8.txt   # 8 Medium instances 
+    └── Dificil_1.txt, Dificil_2.txt  # 2 Hard instances 
+├── README.md               # Dataset documentation & execution guide
 ```
 
 ---
