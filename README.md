@@ -1,1 +1,0 @@
-# Solving-Job-Shop-Scheduling-via-Search-Heuristics-and-Local-Search-
