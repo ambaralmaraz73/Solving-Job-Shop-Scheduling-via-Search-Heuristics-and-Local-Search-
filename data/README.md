@@ -2,7 +2,6 @@
 This directory contains all benchmark files and custom-generated instances used for evaluation in `notebooks/JSSP_Instances_and_Benchmark.ipynb`.
 
 ---
-
 ## Run Benchmarks and Custom Instances in Google Colab
 
 Follow this tutorial to execute any standard benchmark or custom instance (`.txt`) on the code **`JSSP_Instances_and_Benchmark.ipynb`**.
