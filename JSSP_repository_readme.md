@@ -72,15 +72,31 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 * **Multi-Start**: Performs random sequence restarts when local optima are reached to continuously sample the global search space within the 60-second budget.
 
-## 4. How to Reproduce Results
+## 4. How to Reproduce Results (Base 3x3 Model)
 
-### Option 1: Google Colab (Recommended - One Click)
+Follow these simple, step-by-step instructions to run the base 3x3 model, execute all algorithms, and view the generated Gantt charts.
 
-1. Click the **`Colab` badges** at the top of this README to launch either notebook directly in Google Colab.
+---
 
-2. In Colab, execute all cells sequentially via **Runtime > Run all** (`Ctrl + F9`).
+### Option 1: Running in Google Colab (Recommended)
 
-3. The pipeline will automatically load datasets from `data/`, execute the 60-second evaluation protocol, and export summary tables and Gantt plots directly to `results/`.
+1. **Navigate to the Notebooks Folder**:
+   - In this GitHub repository, click on the **`notebooks/`** folder.
+   - Select and click on the file **`JSSP.ipynb`**.
+
+2. **Open in Google Colab**:
+   - At the top of the notebook preview, click the badge **`Open in Colab`** (or click the Colab button at the top of this main README).
+   - This will automatically redirect you to the Google Colab environment with the notebook loaded.
+
+3. **Run the Notebook**:
+   - In Colab's top menu, click **Runtime > Run all** (or press `Ctrl + F9`).
+   - *Alternative*: Run each cell manually from top to bottom by clicking the play button ▶️ next to each code block.
+
+4. **View & Verify Outputs**:
+   - Scroll down through the notebook cells to view:
+     - The comparative metrics table (DFS vs. A* H1/H2 vs. Multi-Start Hill-Climbing).
+     - The interactive Gantt chart plots rendered inline.
+   - All resulting `.csv` summary files (`results_DFS.csv`, `results_AStar.csv`, `results_MSHC.csv`) and `.png` figures will be automatically saved in the **`results/`** folder inside Colab.
 
 ### Option 2: Local Execution
 
