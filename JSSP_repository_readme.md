@@ -99,7 +99,7 @@ Follow these simple, step-by-step instructions to run the base 3x3 model, execut
 
 
 > 💡 **Note on Benchmark and Instances code**:
-> If you wish to run the full experimental pipeline across the 20 custom seeded instances or standard literature benchmarks (`FT06`, `LA36`), please refer to the step-by-step dataset loading tutorial in [**`data/README.md`**](data/README.md) and execute **`notebooks/JSSP_Instances_and_Benchmark.ipynb`**.
+> If you wish to run the full experimental pipeline across the 20 custom seeded instances or standard literature benchmarks (`FT06`, `LA36`), please refer to [**`data/README.md`**](data/README.md) and execute **`notebooks/JSSP_Instances_and_Benchmark.ipynb`**.
 
 
 ## 5. Summary Results (3x3 Base Model Verification)
