@@ -2,7 +2,7 @@
 
 This repository contains the complete experimental evaluation, algorithmic implementations, and comparative benchmarks for the **Job-Shop Scheduling Problem (JSSP)**. We evaluate Uninformed Search (**DFS with Upper Bound Pruning**), Informed Search (**A* / Weighted A* with admissible heuristics), and Stochastic Local Search (**Multi-Start Hill-Climbing with VND**) under a strict **60.0-second execution time budget** per instance.
 
-## Step 1. Problem Overview:
+## 1. Problem Overview:
 
 The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization problem where a set of $n$ jobs must be processed across $m$ dedicated machines. Each job requires a fixed sequence of operations with specified processing durations. A feasible schedule must strictly satisfy:
 
@@ -14,7 +14,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 **Objective**: Minimize the global **makespan** ($C_{max}$), defined as the total completion time of all jobs.
 
-## Step 2. Repository Structure:
+## 2. Repository Structure:
 
 ```
 ├── data/
@@ -40,7 +40,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 ├── README.md           # Main documentation and guide for reproducing results
 ```
 
-## Step 3. Implemented Algorithms
+## 3. Implemented Algorithms
 
 ### a. Uninformed Search Baseline: Depth-First Search (DFS) with Pruning
 
@@ -72,26 +72,26 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 * **Multi-Start**: Performs random sequence restarts when local optima are reached to continuously sample the global search space within the 60-second budget.
 
-## Step 4. How to Reproduce Results (Base 3x3 Model)
+## 4. How to Reproduce Results (Base 3x3 Model)
 
 Follow these simple, step-by-step instructions to run the base 3x3 model, execute all algorithms, and view the generated Gantt charts.
 ---
 
 ### Running in Google Colab (Recommended)
 
-1. **Navigate to the Notebooks Folder**:
+Step 1. **Navigate to the Notebooks Folder**:
    - In this GitHub repository, click on the **`notebooks/`** folder.
    - Select and click on the file **`JSSP.ipynb`**.
 
-2. **Open in Google Colab**:
+Step 2. **Open in Google Colab**:
    - At the top of the notebook preview, click the badge **`Open in Colab`**.
    - This will automatically redirect you to the Google Colab environment with the notebook loaded.
 
-3. **Run the Notebook**:
+Step 3. **Run the Notebook**:
    - In Colab's top menu, click **Runtime > Run all**.
    - *Alternative*: Run each cell manually from top to bottom by clicking the play button ▶️ next to each code block.
 
-4. **View & Verify Outputs**:
+Step 4. **View & Verify Outputs**:
    - Scroll down through the notebook cells to view:
      - The metrics table (DFS, A* H1/H2, Multi-Start Hill-Climbing).
      - The Gantt chart plots generated. 
@@ -102,7 +102,7 @@ Follow these simple, step-by-step instructions to run the base 3x3 model, execut
 > If you wish to run the full experimental pipeline across the 20 custom seeded instances or standard literature benchmarks (`FT06`, `LA36`), please refer to [**`data/README.md`**](data/README.md) and execute **`notebooks/JSSP_Instances_and_Benchmark.ipynb`**.
 
 
-## Step 5. Summary Results (3x3 Base Model Verification)
+## 5. Summary Results (3x3 Base Model Verification)
 
 All algorithms successfully converged to the global optimal makespan of **12 time units** on the canonical $3\times3$ instance under the 60.0s time budget:
 
@@ -117,7 +117,7 @@ All algorithms successfully converged to the global optimal makespan of **12 tim
 
 A* Search with $H_2$ certified global optimality with an **85.0% reduction in node expansions** compared to $H_1$, delivering the most mathematically robust schedule:
 
-## Step 6. Experimental Protocol & Rigor
+## 6. Experimental Protocol & Rigor
 
 * **Execution Limit**: Hard threshold of **60.0 seconds** per instance per solver.
 
