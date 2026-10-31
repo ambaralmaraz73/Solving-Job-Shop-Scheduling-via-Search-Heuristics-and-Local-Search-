@@ -98,7 +98,7 @@ Follow these simple, step-by-step instructions to run the base 3x3 model, execut
    - All resulting `.csv` summary files (`results_DFS.csv`, `results_AStar.csv`, `results_MSHC.csv`) and `.png` plots will be automatically saved in the **`results/`** folder inside Colab.
 
 
-> 💡 **Note on Benchmark & Multi-Instance Pipeline**:
+> 💡 **Note on Benchmark and Instances code**:
 > If you wish to run the full experimental pipeline across the 20 custom seeded instances or standard literature benchmarks (`FT06`, `LA36`), please refer to the step-by-step dataset loading tutorial in [**`data/README.md`**](data/README.md) and execute **`notebooks/JSSP_Instances_and_Benchmark.ipynb`**.
 
 
