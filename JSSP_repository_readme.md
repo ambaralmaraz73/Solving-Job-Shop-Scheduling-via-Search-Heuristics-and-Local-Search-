@@ -95,7 +95,7 @@ Follow these simple, step-by-step instructions to run the base 3x3 model, execut
    - Scroll down through the notebook cells to view:
      - The metrics table (DFS, A* H1/H2, Multi-Start Hill-Climbing).
      - The Gantt chart plots generated. 
-   - All resulting `.csv` summary files (`results_DFS.csv`, `results_AStar.csv`, `results_MSHC.csv`) and `.png` figures will be automatically saved in the **`results/`** folder inside Colab.
+   - All resulting `.csv` summary files (`results_DFS.csv`, `results_AStar.csv`, `results_MSHC.csv`) and `.png` plots will be automatically saved in the **`results/`** folder inside Colab.
 
 ## 5. Summary Results (3x3 Base Model Verification)
 
