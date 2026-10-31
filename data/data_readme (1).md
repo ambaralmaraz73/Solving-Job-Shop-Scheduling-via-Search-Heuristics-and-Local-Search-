@@ -11,8 +11,8 @@ Follow this tutorial to execute any standard benchmark or custom instance (`.txt
 ### Step 1: Running in Google Colab (Recommended)
 
 1. **Navigate to the Notebooks Folder**:
-   - In this GitHub repository, click on the `notebooks/` folder.
-   - Select and click on the file `JSSP_Instances_and_Benchmark.ipynb`.
+   - In this GitHub repository, click on the **`notebooks/`** folder.
+   - Select and click on the file **`JSSP_Instances_and_Benchmark.ipynb`**.
 
 2. **Open in Google Colab**:
    - At the top of the notebook preview, click the badge **`Open in Colab`**.
