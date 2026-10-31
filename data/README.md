@@ -7,9 +7,13 @@ This directory contains all benchmark files and custom-generated instances used 
 Follow this tutorial to execute any standard benchmark or custom instance (`.txt`) on the code **`JSSP_Instances_and_Benchmark.ipynb`**.
 
 ### Step 1: Running in Google Colab (Recommended)
-1. Navigate to the **`notebooks/`** folder in this repository.
-2. Click on **`JSSP_Instances_and_Benchmark.ipynb`**.
-3. Click the **`Open in Colab`** badge at the top to launch the notebook.
+1. **Navigate to the Notebooks Folder**:
+   - In this GitHub repository, click on the **`notebooks/`** folder.
+   - Select and click on the file **`JSSP_Instances_and_Benchmark.ipynb`**.
+
+2. **Open in Google Colab**:
+   - At the top of the notebook preview, click the badge **`Open in Colab`**.
+   - This will automatically redirect you to the Google Colab environment with the notebook loaded.
 
 ### Step 2: Load the Dataset Files into Colab
 Choose **one** of the following two options to make the data files accessible to Colab:
