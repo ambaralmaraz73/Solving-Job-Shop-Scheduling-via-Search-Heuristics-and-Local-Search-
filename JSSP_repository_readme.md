@@ -75,54 +75,27 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 ## 4. How to Reproduce Results (Base 3x3 Model)
 
 Follow these simple, step-by-step instructions to run the base 3x3 model, execute all algorithms, and view the generated Gantt charts.
-
 ---
 
-### Option 1: Running in Google Colab (Recommended)
+### Running in Google Colab (Recommended)
 
 1. **Navigate to the Notebooks Folder**:
    - In this GitHub repository, click on the **`notebooks/`** folder.
    - Select and click on the file **`JSSP.ipynb`**.
 
 2. **Open in Google Colab**:
-   - At the top of the notebook preview, click the badge **`Open in Colab`** (or click the Colab button at the top of this main README).
+   - At the top of the notebook preview, click the badge **`Open in Colab`**.
    - This will automatically redirect you to the Google Colab environment with the notebook loaded.
 
 3. **Run the Notebook**:
-   - In Colab's top menu, click **Runtime > Run all** (or press `Ctrl + F9`).
+   - In Colab's top menu, click **Runtime > Run all**.
    - *Alternative*: Run each cell manually from top to bottom by clicking the play button ▶️ next to each code block.
 
 4. **View & Verify Outputs**:
    - Scroll down through the notebook cells to view:
-     - The comparative metrics table (DFS vs. A* H1/H2 vs. Multi-Start Hill-Climbing).
-     - The interactive Gantt chart plots rendered inline.
+     - The metrics table (DFS, A* H1/H2, Multi-Start Hill-Climbing).
+     - The Gantt chart plots generated. 
    - All resulting `.csv` summary files (`results_DFS.csv`, `results_AStar.csv`, `results_MSHC.csv`) and `.png` figures will be automatically saved in the **`results/`** folder inside Colab.
-
-### Option 2: Local Execution
-
-1. Clone the repository:
-
-   ```
-   git clone https://github.com/ambaralmaraz73/Solving-Job-Shop-Scheduling-via-Search-Heuristics-and-Local-Search-.git
-   cd Solving-Job-Shop-Scheduling-via-Search-Heuristics-and-Local-Search-
-   
-   ```
-
-2. Install dependencies:
-
-   ```
-   pip install pandas matplotlib
-   
-   ```
-
-3. Launch Jupyter Notebooks:
-
-   ```
-   jupyter notebook notebooks/JSSP.ipynb
-   # OR
-   jupyter notebook notebooks/JSSP_Instances_and_Benchmark.ipynb
-   
-   ```
 
 ## 5. Summary Results (3x3 Base Model Verification)
 
