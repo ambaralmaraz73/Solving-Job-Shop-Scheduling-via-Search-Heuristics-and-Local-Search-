@@ -28,15 +28,17 @@ data/
 ├── README.md               # Dataset documentation & execution guide
 ├── notebooks/
 │   ├── JSSP.ipynb                      # Notebook 1: Base 3x3 JSSP & Gantt visualization
-│   └── JSSP_Instances_and_Benchmark.ipynb # Notebook 2: Code for instances (benchmarks, own instances)
-└── results/
+│   |── JSSP_Instances_and_Benchmark.ipynb # Notebook 2: Code for instances (benchmarks, own instances)
+├── reports/
+    ├── JSSP_Report.pdf                 # Report of the project in PDF     
+|── results/
     ├── benchmarks/                     # Output logs for OR-Library benchmark runs (.csv files for all benchmarks)
     ├── own_instances/                  # Output logs for custom instance runs (.csv files for all own instances)
     ├── Best solution_JSSP_Gantt_Chart.png # Best generated Gantt chart output
     ├── JSSP_Gantt_Chart.png            # Initial schedule Gantt chart
     ├── results_DFS.csv                 # Detailed execution metrics for DFS
     ├── results_AStar.csv               # Detailed execution metrics for A* / Weighted A*
-    └── results_MSHC.csv                # Detailed execution metrics for Multi-Start Hill Climbing
+    |── results_MSHC.csv                # Detailed execution metrics for Multi-Start Hill Climbing   
 ├── README.md           # Main documentation and guide for reproducing results
 ```
 
