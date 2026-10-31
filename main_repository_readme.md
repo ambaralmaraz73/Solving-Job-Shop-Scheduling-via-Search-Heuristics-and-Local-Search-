@@ -17,24 +17,27 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 ## Repository Structure:
 
 ```
-├── README.md                           # Main documentation & reproduction guide
-├── 1. JSSP_Report.pdf                  # Official academic research paper
 ├── data/
-│   ├── README.md                       # Data formats, parser specs & generator details
-│   ├── benchmarks/                     # Standard OR-Library instances (e.g., ft06, ft10, la01, la36)
-│   └── own_instances/                  # 20 custom seeded instances (10 Easy, 8 Medium, 2 Hard)
+│   ├── benchmarks/                     # Standard OR-Library instances (10x10, 15x15)
+|       ├── ft10.txt
+|       ├── la36.txt
+│   |── own_instances/                  # 20 custom seeded instances (10 Easy, 8 Medium, 2 Hard)
+|       ├── Easy.txt                    #10
+|       ├── Medium.txt                  #8
+|       ├── Hard.txt                    #2
+|   ├── README.md                       # Instructions for generating results for the instances; discussion of results
 ├── notebooks/
-│   ├── JSSP.ipynb                      # Notebook 1: Base 3x3 Toy Model & Gantt visualization
-│   └── JSSP_Instances_and_Benchmark.ipynb # Notebook 2: Full Benchmark Pipeline (20+ instances)
+│   ├── JSSP.ipynb                      # Notebook 1: Base 3x3 JSSP & Gantt visualization
+│   └── JSSP_Instances_and_Benchmark.ipynb # Notebook 2: Code for instances (benchmarks, own instances)
 └── results/
-    ├── benchmarks/                     # Output logs for OR-Library benchmark runs
-    ├── own_instances/                  # Output logs for custom instance runs
+    ├── benchmarks/                     # Output logs for OR-Library benchmark runs (.csv files for all benchmarks)
+    ├── own_instances/                  # Output logs for custom instance runs (.csv files for all own instances)
     ├── Best solution_JSSP_Gantt_Chart.png # Best generated Gantt chart output
     ├── JSSP_Gantt_Chart.png            # Initial schedule Gantt chart
     ├── results_DFS.csv                 # Detailed execution metrics for DFS
     ├── results_AStar.csv               # Detailed execution metrics for A* / Weighted A*
     └── results_MSHC.csv                # Detailed execution metrics for Multi-Start Hill Climbing
-
+├── main_repository_README.md           # Main documentation and guide for reproducing results
 ```
 
 ## 🛠️ Implemented Algorithms
