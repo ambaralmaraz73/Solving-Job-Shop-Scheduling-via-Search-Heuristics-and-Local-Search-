@@ -15,7 +15,7 @@ Follow this tutorial to execute any standard benchmark or custom instance (`.txt
    - Select and click on the file `JSSP_Instances_and_Benchmark.ipynb`.
 
 2. **Open in Google Colab**:
-   - At the top of the notebook preview, click the badge `Open in Colab`.
+   - At the top of the notebook preview, click the badge **`Open in Colab`**.
    - This will automatically redirect you to the Google Colab environment with the notebook loaded.
 
 ---
