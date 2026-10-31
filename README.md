@@ -2,7 +2,7 @@
 
 This repository contains the complete experimental evaluation, algorithmic implementations, and comparative benchmarks for the **Job-Shop Scheduling Problem (JSSP)**. We evaluate Uninformed Search (**DFS with Upper Bound Pruning**), Informed Search (**A* / Weighted A* with admissible heuristics), and Stochastic Local Search (**Multi-Start Hill-Climbing with VND**) under a strict **60.0-second execution time budget** per instance.
 
-## 1. Problem Overview:
+## Step 1. Problem Overview:
 
 The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization problem where a set of $n$ jobs must be processed across $m$ dedicated machines. Each job requires a fixed sequence of operations with specified processing durations. A feasible schedule must strictly satisfy:
 
@@ -14,7 +14,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 **Objective**: Minimize the global **makespan** ($C_{max}$), defined as the total completion time of all jobs.
 
-## 2. Repository Structure:
+## Step 2. Repository Structure:
 
 ```
 ├── data/
@@ -40,7 +40,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 ├── README.md           # Main documentation and guide for reproducing results
 ```
 
-## 3. Implemented Algorithms
+## Step 3. Implemented Algorithms
 
 ### a. Uninformed Search Baseline: Depth-First Search (DFS) with Pruning
 
@@ -72,7 +72,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 * **Multi-Start**: Performs random sequence restarts when local optima are reached to continuously sample the global search space within the 60-second budget.
 
-## 4. How to Reproduce Results (Base 3x3 Model)
+## Step 4. How to Reproduce Results (Base 3x3 Model)
 
 Follow these simple, step-by-step instructions to run the base 3x3 model, execute all algorithms, and view the generated Gantt charts.
 ---
@@ -102,7 +102,7 @@ Follow these simple, step-by-step instructions to run the base 3x3 model, execut
 > If you wish to run the full experimental pipeline across the 20 custom seeded instances or standard literature benchmarks (`FT06`, `LA36`), please refer to [**`data/README.md`**](data/README.md) and execute **`notebooks/JSSP_Instances_and_Benchmark.ipynb`**.
 
 
-## 5. Summary Results (3x3 Base Model Verification)
+## Step 5. Summary Results (3x3 Base Model Verification)
 
 All algorithms successfully converged to the global optimal makespan of **12 time units** on the canonical $3\times3$ instance under the 60.0s time budget:
 
@@ -117,7 +117,7 @@ All algorithms successfully converged to the global optimal makespan of **12 tim
 
 A* Search with $H_2$ certified global optimality with an **85.0% reduction in node expansions** compared to $H_1$, delivering the most mathematically robust schedule:
 
-## 6. Experimental Protocol & Rigor
+## Step 6. Experimental Protocol & Rigor
 
 * **Execution Limit**: Hard threshold of **60.0 seconds** per instance per solver.
 
