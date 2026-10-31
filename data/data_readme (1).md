@@ -4,7 +4,7 @@ This directory contains all benchmark files and custom-generated instances used 
 
 ---
 
-## 🔗 Run Benchmarks and Custom Instances in Google Colab
+## Run Benchmarks and Custom Instances in Google Colab
 
 Follow this tutorial to execute any standard benchmark or custom instance (`.txt`) on the code `JSSP_Instances_and_Benchmark.ipynb`.
 
@@ -24,7 +24,7 @@ Follow this tutorial to execute any standard benchmark or custom instance (`.txt
 
 1. In this GitHub repository, go into the `data/` directory.
 2. Choose the dataset folder you want to use:
-   - **Standard Benchmarks**: Click on `benchmarks/` (e.g., `ft10.txt`, `la36.txt`).
+   - **Standard Benchmarks**: Click on `benchmarks/` (`ft10.txt`, `la36.txt`).
    - **Custom Seeded Instances**: Click on `own_instances/` (e.g., `Easy_1.txt`, `Dificil_1.txt`).
 3. Click on the `.txt` file you wish to run and click the **Download** button in GitHub to save it to your local computer.
 
@@ -35,7 +35,7 @@ Follow this tutorial to execute any standard benchmark or custom instance (`.txt
 1. Inside your active Google Colab session, click on the **Folder icon** 📁 on the left sidebar to open the Files panel.
 2. Create the required destination folder depending on your test file:
    - For standard benchmarks: Right-click in the files area, select **New folder**, and name it **`benchmarks`**.
-   - For custom instances: Right-click in the files area, select **New folder**, and name it **`instances`** (or `own_instances`).
+   - For custom instances: Right-click in the files area, select **New folder**, and name it **`instances`**.
 3. Drag and drop your downloaded `.txt` file directly into its corresponding folder (`benchmarks` or `instances`) in Colab.
 
 ---
@@ -59,7 +59,7 @@ else:
     jobs_data_loaded = load_custom_instance(instance_path)
 ```
 
-3. In Colab's top menu, click **Runtime > Run all** (`Ctrl + F9`).
+3. In Colab's top menu, click **Runtime > Run all**.
 4. The notebook will process the execution under the strict **60.0-second protocol** and automatically log summary metrics and detailed schedules into the `results/` folder.
 
 ---
@@ -78,11 +78,9 @@ data/
 
 ---
 
-## 📄 How are the dataset (`.txt`) files structured?
+## 📄 Instances format (`.txt`) 
 
-To make it easy to understand how the algorithms process the scheduling problems, each `.txt` file contains simple text instructions specifying the sequence of operations for every job:
-
-### 1. Custom Seeded Instances Format (`own_instances/`)
+### 1. Custom Instances Format (`own_instances/`)
 
 These files explicitly list each machine using the letter `M` alongside its required processing time:
 
@@ -96,7 +94,7 @@ M1 2  M3 3  M2 4   <-- Job 2: Machine 1 (2 min) -> Machine 3 (3 min) -> Machine 
 M2 3  M1 2  M3 1   <-- Job 3: Machine 2 (3 min) -> Machine 1 (2 min) -> Machine 3 (1 min)
 ```
 
-### 2. Standard OR-Library Format (`benchmarks/` e.g., FT10, LA36)
+### 2. Standard OR-Library Format (`benchmarks/` FT10, LA36)
 
 Literature benchmark files use the standard academic OR-Library structure where machines are **0-indexed numbers** (0, 1, 2...) instead of names:
 
@@ -109,4 +107,4 @@ Literature benchmark files use the standard academic OR-Library structure where 
 1 8  2 5  4 10 5 10 0 10 3 4
 ```
 
-> 💡 **Automatic Parsing Note**: As shown in Step 4, the code checks `if 'benchmarks/' in instance_path:` to call `load_or_library_instance()`, which automatically maps 0-indexed machines (`0 -> M1`, `1 -> M2`, etc.) without requiring manual file edits.
+> 💡 **Note**: As shown in Step 4, the code checks `if 'benchmarks/' in instance_path:` to call `load_or_library_instance()`, which automatically maps 0-indexed machines (`0 -> M1`, `1 -> M2`, etc.) without requiring manual file edits.
