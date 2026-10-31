@@ -48,7 +48,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 * **Pruning Rule**: Any candidate branch with projected completion time $f(s) \ge UB$ is immediately discarded, reducing node expansions while maintaining extreme memory efficiency.
 
-### 2. Informed Search: $A^*$ and Weighted $A^*$ Search
+### 2. Informed Search: A* and Weighted A* Search
 
 * **Evaluation Function**: $f(n) = g(n) + w \cdot h(n)$ where $g(n)$ is the accumulated partial makespan.
 
@@ -58,7 +58,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
   * $H_2$ **(Bottleneck - Machine Workload)**: Computes the maximum pending processing workload across all machines and returns $\max(H_1, \text{Workload})$. Admissible and significantly tighter lower bound.
 
-* **Weight Variants**: Tested $w = 1.0$ (standard $A^*$), $w = 1.5$, and $w = 2.0$ (Weighted $A^*$).
+* **Weight Variants**: Tested $w = 1.0$ (standard A*), $w = 1.5$, and $w = 2.0$ (Weighted A*).
 
 ### 3. Stochastic Local Search: Multi-Start Hill-Climbing (MSHC) with VND
 
@@ -121,7 +121,7 @@ All algorithms successfully converged to the global optimal makespan of **12 tim
 
 ### Winner Schedule Output
 
-$A^*$ Search with $H_2$ certified global optimality with an **85.0% reduction in node expansions** compared to $H_1$, delivering the most mathematically robust schedule:
+A* Search with $H_2$ certified global optimality with an **85.0% reduction in node expansions** compared to $H_1$, delivering the most mathematically robust schedule:
 
 ## 📑 Experimental Protocol & Rigor
 
