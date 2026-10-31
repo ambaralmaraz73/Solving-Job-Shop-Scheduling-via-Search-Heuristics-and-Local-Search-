@@ -2,7 +2,7 @@
 
 This repository contains the complete experimental evaluation, algorithmic implementations, and comparative benchmarks for the **Job-Shop Scheduling Problem (JSSP)**. We evaluate Uninformed Search (**DFS with Upper Bound Pruning**), Informed Search (**A* / Weighted A* with admissible heuristics), and Stochastic Local Search (**Multi-Start Hill-Climbing with VND**) under a strict **60.0-second execution time budget** per instance.
 
-## Problem Overview:
+## 1. Problem Overview:
 
 The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization problem where a set of $n$ jobs must be processed across $m$ dedicated machines. Each job requires a fixed sequence of operations with specified processing durations. A feasible schedule must strictly satisfy:
 
@@ -14,7 +14,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 **Objective**: Minimize the global **makespan** ($C_{max}$), defined as the total completion time of all jobs.
 
-## Repository Structure:
+## 2. Repository Structure:
 
 ```
 ├── data/
@@ -40,15 +40,15 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 ├── JSSP_repository_README.md           # Main documentation and guide for reproducing results
 ```
 
-## 🛠️ Implemented Algorithms
+## 3. Implemented Algorithms
 
-### 1. Uninformed Search Baseline: Depth-First Search (DFS) with Pruning
+### a. Uninformed Search Baseline: Depth-First Search (DFS) with Pruning
 
 * **Strategy**: Explores paths in LIFO order to quickly reach leaf nodes and establish an initial **Upper Bound (UB)**.
 
 * **Pruning Rule**: Any candidate branch with projected completion time $f(s) \ge UB$ is immediately discarded, reducing node expansions while maintaining extreme memory efficiency.
 
-### 2. Informed Search: A* and Weighted A* Search
+### b. Informed Search: A* and Weighted A* Search
 
 * **Evaluation Function**: $f(n) = g(n) + w \cdot h(n)$ where $g(n)$ is the accumulated partial makespan.
 
@@ -60,7 +60,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 * **Weight Variants**: Tested $w = 1.0$ (standard A*), $w = 1.5$, and $w = 2.0$ (Weighted A*).
 
-### 3. Stochastic Local Search: Multi-Start Hill-Climbing (MSHC) with VND
+### c. Stochastic Local Search: Multi-Start Hill-Climbing (MSHC) with VND
 
 * **Representation**: Operation-based list representation mapped via a deterministic decoder.
 
@@ -72,7 +72,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 
 * **Multi-Start**: Performs random sequence restarts when local optima are reached to continuously sample the global search space within the 60-second budget.
 
-## 🚀 How to Reproduce Results
+## 4. How to Reproduce Results
 
 ### Option 1: Google Colab (Recommended - One Click)
 
@@ -108,7 +108,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
    
    ```
 
-## 📊 Summary Results (3x3 Base Model Verification)
+## 5. Summary Results (3x3 Base Model Verification)
 
 All algorithms successfully converged to the global optimal makespan of **12 time units** on the canonical $3\times3$ instance under the 60.0s time budget:
 
@@ -123,7 +123,7 @@ All algorithms successfully converged to the global optimal makespan of **12 tim
 
 A* Search with $H_2$ certified global optimality with an **85.0% reduction in node expansions** compared to $H_1$, delivering the most mathematically robust schedule:
 
-## 📑 Experimental Protocol & Rigor
+## 6. Experimental Protocol & Rigor
 
 * **Execution Limit**: Hard threshold of **60.0 seconds** per instance per solver.
 
