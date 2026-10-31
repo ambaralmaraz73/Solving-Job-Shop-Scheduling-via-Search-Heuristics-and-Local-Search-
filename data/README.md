@@ -1,14 +1,13 @@
-# 📊 Dataset Specifications & Instance Execution Tutorial
+# 📊 Dataset Instances & Benchmark Execution Guide
 
-This directory contains all benchmark files and custom-generated instances used for experimental evaluation in `notebooks/JSSP_Instances_and_Benchmark.ipynb`.
-
+This directory contains all benchmark files and custom-generated instances used for evaluation in `notebooks/JSSP_Instances_and_Benchmark.ipynb`.
 ---
 
-## 🚀 How to Run Benchmarks & Custom Instances in Google Colab
+## Run Benchmarks and Custom Instances in Google Colab
 
-Follow this tutorial to execute any standard benchmark (`.txt`) or custom instance on the multi-instance evaluation pipeline:
+Follow this tutorial to execute any standard benchmark or custom instance (`.txt`) on the code **`JSSP_Instances_and_Benchmark.ipynb`**.
 
-### Step 1: Open the Benchmark Notebook in Colab
+### Step 1: Running in Google Colab (Recommended)
 1. Navigate to the **`notebooks/`** folder in this repository.
 2. Click on **`JSSP_Instances_and_Benchmark.ipynb`**.
 3. Click the **`Open in Colab`** badge at the top to launch the notebook.
