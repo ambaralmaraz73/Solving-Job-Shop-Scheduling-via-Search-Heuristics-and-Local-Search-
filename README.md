@@ -17,15 +17,15 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 ## 2. Repository Structure:
 
 ```
-├── data/
-│   ├── benchmarks/                     # Standard OR-Library instances (10x10, 15x15)
+data/
+├── benchmarks/             # OR-Library standard benchmarks (ft10, la36)
 |       ├── ft10.txt
 |       ├── la36.txt
-│   |── own_instances/                  # 20 custom seeded instances (10 Easy, 8 Medium, 2 Hard)
-|       ├── Easy.txt                    #10
-|       ├── Medium.txt                  #8
-|       ├── Hard.txt                    #2
-|   ├── README.md                       # Instructions for generating results for the instances
+└── own_instances/          # 20 custom seeded instances (random.seed(42))
+    ├── Easy_1.txt ... Easy_10.txt    # 10 Easy instances 
+    ├── Medio_1.txt ... Medio_8.txt   # 8 Medium instances 
+    └── Dificil_1.txt, Dificil_2.txt  # 2 Hard instances 
+├── README.md               # Dataset documentation & execution guide
 ├── notebooks/
 │   ├── JSSP.ipynb                      # Notebook 1: Base 3x3 JSSP & Gantt visualization
 │   └── JSSP_Instances_and_Benchmark.ipynb # Notebook 2: Code for instances (benchmarks, own instances)
