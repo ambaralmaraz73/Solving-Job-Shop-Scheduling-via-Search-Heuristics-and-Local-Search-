@@ -25,7 +25,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
 |       ├── Easy.txt                    #10
 |       ├── Medium.txt                  #8
 |       ├── Hard.txt                    #2
-|   ├── README.md                       # Instructions for generating results for the instances; discussion of results
+|   ├── README.md                       # Instructions for generating results for the instances
 ├── notebooks/
 │   ├── JSSP.ipynb                      # Notebook 1: Base 3x3 JSSP & Gantt visualization
 │   └── JSSP_Instances_and_Benchmark.ipynb # Notebook 2: Code for instances (benchmarks, own instances)
