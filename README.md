@@ -37,7 +37,7 @@ The Job-Shop Scheduling Problem (JSSP) is an NP-hard combinatorial optimization 
     ├── results_DFS.csv                 # Detailed execution metrics for DFS
     ├── results_AStar.csv               # Detailed execution metrics for A* / Weighted A*
     └── results_MSHC.csv                # Detailed execution metrics for Multi-Start Hill Climbing
-├── JSSP_repository_README.md           # Main documentation and guide for reproducing results
+├── README.md           # Main documentation and guide for reproducing results
 ```
 
 ## 3. Implemented Algorithms
